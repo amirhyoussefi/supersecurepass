@@ -1,0 +1,39 @@
+{
+  "name": "lit-protocol-encrypt-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "NodeNext",
+  "moduleResolution": "NodeNext",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --exit-child src/server.ts",
+    "start": "node ./build/src/server.js",
+    "build": "tsc --project ./tsconfig.json",
+    "pretty": "prettier --check \"src/**/*.{js,ts}\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fix:pretty": "prettier --write \"src/**/*.{js,ts,jsx,tsx}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lit-protocol/contracts-sdk": "^6.8.1",
+    "@lit-protocol/lit-node-client": "^6.8.1",
+    "@lit-protocol/lit-node-client-nodejs": "^6.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^6.9.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/morgan": "^1.9.9",
+    "morgan": "^1.10.0",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  }
+}
